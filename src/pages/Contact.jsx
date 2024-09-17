@@ -17,7 +17,7 @@ const schema = yup.object().shape({
   subject: yup.string(),
   message: yup
     .string()
-    .required('There is a 100 character requirement.')
+    .required('There is a 100 character minimum.')
     .min(100, 'Message must be at least 100 characters long.'),
 });
 
